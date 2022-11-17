@@ -5,13 +5,11 @@
     <!-- Nav -->
     <?php include './partials/navbar.php';?>
     <div class="hero-section">
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. In illum, fuga
-        fugit minus iusto blanditiis suscipit id fugiat dignissimos, distinctio
+      <p class="p-hero">
+       -- BSMRSTU SHOP MANAGEMENT --
       </p>
-      <span><a href="">Order Now!</a></span>
     </div>
-    <h2 class="shop-head">Shops</h2>
+    <h2 class="shop-head">Shop List</h2>
     <div class="card-container">
       <?php 
       $query = "SELECT * FROM shop;";
@@ -26,7 +24,7 @@
           <li>Delivery facility :<?php echo $row['delivery'];?></li>
           <li>Customer Capacity :<?php echo $row['capacity'];?></li>
         </ul>
-        <p><?php echo $row['description']?></p>
+        <!-- <p><?php echo $row['description']?></p> -->
         <form action="/mamun/pages/details.php" method="POST">
           <input class="hidden-input" type="text" name="s_id" value="<?php echo $row['id'];?>">
           <button>Details</button>

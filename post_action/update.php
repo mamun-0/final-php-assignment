@@ -9,7 +9,6 @@
     $capacity = $_POST['capacity'];
     $description = $_POST['description'];
     $query = "UPDATE shop SET name = " . "'" .$name."'" . ", stuff = "."'".$stuff."'". ", delivery = "."'".$delivery."'". ", capacity = "."'".$capacity."'". ", description = "."'".$description."'". " WHERE id = ".$id;
-    // echo $query;
     mysqli_query($connection, $query);
     header("Location: ../index.php");
     ?>

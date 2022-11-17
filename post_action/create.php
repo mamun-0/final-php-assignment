@@ -2,11 +2,11 @@
 <?php include '../db/db.php';?>
 <?php
     
-    $name = mysqli_real_escape_string($connection, $_POST['name']);
-    $stuff = mysqli_real_escape_string($connection, $_POST['stuff']);
-    $delivery = mysqli_real_escape_string($connection, $_POST['delivery']);
-    $capacity = mysqli_real_escape_string($connection, $_POST['capacity']);
-    $description = mysqli_real_escape_string($connection, $_POST['description']);
+    $name = $_POST['name'];
+    $stuff = $_POST['stuff'];
+    $delivery = $_POST['delivery'];
+    $capacity = $_POST['capacity'];
+    $description = $_POST['description'];
 
     $query = "INSERT INTO shop (name,stuff,delivery,capacity, description) VALUES (?, ?, ?, ?,?);";
 

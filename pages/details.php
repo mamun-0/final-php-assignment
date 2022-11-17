@@ -15,14 +15,14 @@
 
     <div class="details-shop-card">
       <div class="img-area"></div>
-      <h3><em>Shop Name : <?php echo $row['name']?></em></h3>
+      <h3><em><strong>Shop Name :</strong> <?php echo $row['name']?></em></h3>
       <ul>
-        <li><em>Stuff :</em><?php echo $row['stuff']?></li>
-        <li><em>Home Delivery facility :</em><?php echo $row['delivery'] ?></li>
-        <li><em>Customer Capacity : </em><?php echo $row['capacity']?></li>
+        <li><em><strong>Stuff :</strong></em><?php echo $row['stuff']?></li>
+        <li><em><strong>Home Delivery facility :</strong></em><?php echo $row['delivery'] ?></li>
+        <li><em><strong>Customer Capacity : </strong></em><?php echo $row['capacity']?></li>
       </ul>
       <p>
-        <em>Description : </em> <?php echo $row['description']?>
+        <em><strong>Description : </strong></em> <?php echo $row['description']?>
       </p>
       <form action="/mamun/pages/update.php" method="POST">
         <input class="hidden-input" type="text" name="s_id" value="<?php echo $row['id'];?>">
